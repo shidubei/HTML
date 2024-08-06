@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <head>
     <title>Assignment05</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- banner: with company logo -->
-    <div>
-        <ul>
-            <li>
-                <!-- company logo -->
-            </li>
-            <li>
-                <!-- company name -->
-            </li> 
-        </ul>
-    </div>
-    <!-- content: with form -->
-        <form action="">
-            <h1>Please Do This Below</h1>
-            Firstname: <input type="text" value="firstName"><br>
-            Surname: <input type="text" value="surName"><br>
-            <!-- checkbox -->
-            <input type="checkbox" name="" id="">
-            <!-- radio -->
-            <input type="radio" name="" id="">
-            <!-- dropdown list -->
-            <select name="" id="">
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select> 
-        </form>
-    <div>
-
-    </div>
-    <!-- footer: with contact ways -->
-    <div>
-
-    </div>
+    <table border="1" cellspacing="0" cellpadding="0" align="center">
+        <!-- banner: with company logo -->
+        <tr class="bannerTr">
+            <td>
+                <ul class="banner">
+                    <li>
+                        <img src="./IMG/Snipaste_2024-08-05_21-11-15.jpg" alt="">
+                    </li>
+                    <li>
+                        <h1>Travel Company</h1>
+                    </li> 
+                </ul>
+            </td>
+        </tr>
+        <!-- content: with form -->
+        <tr class="contentTr">
+            <td>
+                <form action="mailto:shidubei@gmail.com" method="post">
+                    Firstname: <input type="text"><br>
+                    Surname: <input type="text"><br>
+                    <!-- checkbox -->
+                    <p>Your Sex:</p> 
+                    <input type="radio" name="sex" value="Male">Male <br>
+                    <input type="radio" name="sex" value="Female">Female <br>
+        
+                    <p>You know us from:</p>
+                    <input type="radio" name="source" value="Weibo">Weibo <br>
+                    <input type="radio" name="source" value="Instagram">Instagram <br>
+                    <input type="radio" name="source" value="Twitter">Twitter <br>
+                    <input type="radio" name="source" value="Bilibili">Bilibili <br>
+                    
+                    <!-- dropdown list -->
+                    <p>Choose one type you use to pay:</p> 
+                    <select name="Payment" id="">
+                        <option value="Paylah">Paylah</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Mastercard">Mastercard</option>
+                    </select><br>
+                    
+                    <p>Do you want us to send email to you? </p>
+                    <input type="checkbox" name="sendCheck" value="Yes" checked>Yes <br>
+                    <input type="checkbox" name="sendCheck" value="No">No <br>
+                    
+                    <p>Give us your email address: </p>
+                    <input type="text" name="emailAddress"> <br>
+        
+                    <p>Give us your phone number:</p> 
+                    <input type="number" name="phoneNumber"> <br>
+        
+                    <p>Choose one date you will travel nearest:</p>
+                    <input type="date" name="travelDate"> <br>
+                    <input type="submit" value="Submit">
+                </form>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

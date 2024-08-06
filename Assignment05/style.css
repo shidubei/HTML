@@ -1,0 +1,48 @@
+h1{
+    font-size: 25px;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bannerTr{
+    padding:0;
+    margin:0;
+}
+.bannerTr td{
+    width: 300px;
+    height:100px;
+    text-align: center;
+    background-color: bisque;
+}
+
+.contentTr td{
+    width: 300px;
+    text-align: center;
+}
+
+.footerTr td{
+    width: 300px;
+}
+.footerTr td input{
+    width: 300px;
+}
+/* banner's ui */
+.banner{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display: inline-flex;
+}
+.banner li{
+    padding:10px;
+}
+
+.banner li img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
