@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showMessage(){
+            setTimeout("alert('Hello Folks')",0);
+        }
+        function myProgram(){
+            document.write('Program starts...we will call the function we created');
+            showMessage();
+            document.write('We have called the function first time');
+            showMessage();
+            document.write('We have called the function second time;And,program ends');
+        }
+    </script>
+</head>
+<body>
+    <input type="submit" value="Run Script..." onclick="myProgram()">
+</body>
+</html>
