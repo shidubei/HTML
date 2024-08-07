@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment07</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        // Q1
+        let x = Number(prompt('Enter a number:'))
+        document.write(3*x*x*x-7*x*x+2*x+5)
+        // Q2
+        let time = Number(prompt('Enter a time(24 clock):'))
+        if (time < 12){
+            document.write('Good Morning')
+        }else{
+            document.write('Good Afternoon')
+        }
+        //Q3
+        let name = prompt('Enter a name:')
+        if (time < 12){
+            document.write('Good Morning'+name)
+        }else{
+            document.write('Good Afternoon'+name)
+        }
+        //Q4
+        let sum = 0;
+        let n = prompt('Enter a number:')
+        for (let i = 1; i <=n;i++){
+            sum +=i
+        }
+        document.write(sum)
+        
+        function genarateTrTd(){
+            for (let i=0;i<6;i++){
+                document.write('<tr><td></td><td></td><td></td><td></td></tr>')
+            }
+            let table = document.getElementById("tb")
+            for (let i=0;i<6;i++){
+                let row = table.getElementsByTagName("tr")[i]
+                for(let j=0;j<4;j++){
+                    let td = row.children[j]
+                    if (i==0){
+                        if (j==0){
+                            td.innerHTML = 'x'
+                        }else if(j==1){
+                            td.innerHTML = 'x^2'
+                        }else if(j==2){
+                            td.innerHTML= '1/x'
+                        }else if(j==3){
+                            td.innerHTML='sqrt(x)'
+                        }
+                    }else{
+                        if (j==0){
+                            td.innerHTML =i
+                        }else if(j==1){
+                            td.innerHTML = i*i
+                        }else if(j==2){
+                            td.innerHTML=(1/i).toFixed(3)
+                        }else if(j==3){
+                            td.innerHTML=Math.sqrt(i).toFixed(3)
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <table id="tb" width="400px" height="180px" align="center" border="1" cellspacing="0" cellpadding="0">
+        <script>
+            genarateTrTd();
+        </script>
+    </table>
+</body>
+</html>

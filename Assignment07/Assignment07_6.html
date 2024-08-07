@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment07_6</title>
+    <style>
+        #outbox{
+            width: 300px;
+            height: 200px;
+        }
+        #errorbox{
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        function checkForm(){
+            let name = document.getElementById('name').value;
+            let age = Number(document.getElementById('age').value);
+            let phone = document.getElementById('phone').value;
+            let gender = document.getElementsByName('Gender')
+            let sex = ''
+            let hobbies = document.getElementsByName('Hobbies')
+            let genderCheck = 0
+            let str=''
+            //  check whether name is empty
+            if (name==""){
+                // if name is empty
+                document.getElementById('errorbox').value="Name is empty"
+            }else if(name.length>15){
+                // if name's length longer than 15
+                document.getElementById('errorbox').value="Name's length should not longer than 15"
+            }else{
+                str += 'Name is '+name+';'
+            }
+            // check whether age is number or age is negative
+            if (typeof age!="number"){
+                document.getElementById('errorbox').value="age must be a number"
+            }else if(age<=0){
+                document.getElementById('errorbox').value="Age can not be negative"
+            }else{
+                str += 'Age is '+age+';'
+            }
+            // check whether gender have been choosen
+            for (let i=0;i<gender.length;i++){
+                if (gender[i].checked){
+                    genderCheck = 1;
+                    sex = gender[i].value;
+                }
+            }
+            if (genderCheck==0){
+                document.getElementById('errorbox').value="Gender must be choose"
+            }else{
+                str += 'Gender is '+sex+';'
+            }
+            str +='Phone is '+phone+';'
+            for (let i=0;i<hobbies.length;i++){
+                if(hobbies[i].checked){
+                    str += hobbies[i].value
+                }
+            }
+            // only when there is no error print outbox
+            if (document.getElementById('errorbox').value==''){
+                document.getElementById('outbox').value=str
+            }  
+        }
+    </script>
+</head>
+<body>
+    Name: <input type="text" name="Name" id="name"> <br>
+    Age: <input type="text" name="Age" id="age"> <br>
+    Gender: <br>
+    <input type="radio" name="Gender" value="Male">Male
+    <input type="radio" name="Gender" value="Female">Female <br>
+
+    Phone: <input type="text" name="Phone" id="phone"> <br>
+    Hobbies: <br>
+    <input type="radio" name="Hobbies" value="Reading">Reading
+    <input type="radio" name="Hobbies" value="Sports">Sports
+    <input type="radio" name="Hobbies" value="Movies">Movies
+    <input type="radio" name="Hobbies" value="Travelling">Travelling <br>
+
+    <input type="submit" value="Submit" onclick="checkForm()"><br>
+
+    Output: <br>
+    <input type="text" name="Outbox" id="outbox"><br>
+
+    Errors: <br>
+    <input type="text" name="Eorror" id="errorbox"><br>
+</body>
+</html>
