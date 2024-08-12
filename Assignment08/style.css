@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.header{
+    height: 50px;
+    background-color: #f5f1f1;
+}
+.header .headerLeft{
+    float: left;
+    width: 50%;
+    line-height: 50px;
+    padding-left: 50px;
+}
+.header .headerRight{
+    float: right;
+    padding-right: 50px;
+}
+.header .headerRight ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.header .headerRight ul li{
+    display:inline-block;
+    position: relative;
+    margin: 10px;
+}
+.header .headerRight ul li a{
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo{
+    height: 150px;
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.logo .logoTable{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.logo .logoTable tr td{
+    width: 30%;
+}
+.logo .search{
+    width: 300px;
+    display: flex;
+    margin-left: 50px;
+}
+.logo #searchTerm{
+    border:1px solid grey;
+    float:left;
+    font-size: 10px;
+    padding: 5px;
+    width: 90%;
+}
+
+.logo #searchButton{
+    float: left;
+    width:10%;
+    padding: 5px;
+    font-size: 5px;
+    border:1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+.logo #searchButton img{
+    height: 20px;
+}
+
+.logo #logoImg{
+    height:120px;
+}
+.logo #shopImg{
+    height: 20px;
+}
+.menu{
+    display: block;
+    width: auto;
+}
+
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+.menu ul li{
+    display:inline-block;
+    position: relative;
+    height: 50px;
+    margin: 10px;
+}
+
+.menu ul li a{
+    float: left;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu ul li a:hover{
+    color:blueviolet;
+}
+.menu ul li a:active{
+    color:brown;
+}
+
+.menu img{
+    height: 100px;
+    width: 100%;
+}
+.cart h1{
+    margin-left: 50px;
+}
+.cart table{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    height: 300px;
+}
+.cart table tr th{
+    height: 50px;
+}
+.cart table img{
+    height: 80px;
+}
+
+.cart table input{
+    width:50px;
+}
+
+.cartForm{
+    width:90%;
+    margin:0 5%;
+}
+
+.cartFormLeft{
+    float: left;
+}
+
+.cartFormLeft #updateCart{
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+.cartFormLeft #continueShopping{
+    width: 160px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+.cartFormLeft #apply{
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color: white;
+}
+.cartFormLeft #couponText{
+    height: 30px;
+}
+.cartFormLeft #text1{
+    margin: 5px 0;
+    font-size: large;
+}
+.cartFormLeft #text2{
+    margin: 5px 0;
+    font-size: medium;
+}
+.cartFormRight{
+    float:right;
+}
+
+.cartFormRight table{
+    width:300px;
+    height:150px;
+    text-align: right;
+    vertical-align: top;
+}
+.cartFormRight table thead{
+    font-size: larger;
+    text-align: right;
+}
+.cartFormRight #proceed{
+    width: 180px;
+    height: 35px;
+    background-color: blueviolet;
+    color: white;
+    float: right;
+}

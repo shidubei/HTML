@@ -4,35 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment08</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!-- banner -->
-    <div>
-
+    <!-- header -->
+    <div class="header">
+        <div class="headerLeft">
+            FREE SHIPPING ON ORDERS OVER $99
+        </div>
+        <div class="headerRight">
+            <ul>
+                <li><a href="">My Account</a></li>
+                <li><a href="">Create Account</a></li>
+            </ul>
+        </div>
     </div>
+    <hr>
     <!-- logo and search -->
-    <div>
-
-    </div>
+    <div class="logo">
+        <table class="logoTable">
+            <tr>
+                <td>
+                    <form class="search"> 
+                        <input type="text" placeholder="Search..." id="searchTerm">
+                        <button type="submit" id="searchButton">
+                            <img src="./IMG/icons8-搜索-50.png" alt="">
+                        </button>
+                    </form>
+                </td>
+                <td>
+                    <img src="./IMG/Logo.png" id="logoImg">
+                </td>
+                <td>
+                    <img src="./IMG/icons8-购物车-50.png" id="shopImg">
+                </td>
+            </tr>
+        </table>
+   </div>
+   <hr>
     <!-- menu -->
-    <div>
+    <div class="menu">
         <ul>
-            <li>SEATING</li>
-            <li>TABLE</li>
-            <li>WORKSTATION FURNITURE</li>
-            <li>DINING BOOM</li>
-            <li>ALL PAGES</li>
-            <li>CONTACT</li>
+            <li><a href="">SEATING</a></li>
+            <li><a href="">TABLE</a></li>
+            <li><a href="">WORKSTATION FURNITURE</a></li>
+            <li><a href="">DINING BOOM</a></li>
+            <li><a href="">ALL PAGES</a></li>
+            <li><a href="">CONTACT</a></li>
         </ul>
-        <img src="" alt="">
+        <img src="./IMG/wallhaven-exg93k.png" alt="">
     </div>
-    <!-- products -->
-    <div>
-
+    <hr>
+    <!-- cart -->
+    <div class="cart">
+        <h1>Cart</h1>
+        <br>
+        <table border="1px" cellspacing="0" cellpadding="0" align="center">
+            <tr>
+                <th>IMAGE</th>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>TOTAL</th>
+                <th>REMOVE</th>
+            </tr>
+            <tr>
+                <td><img src="./IMG/chair1.jpg" alt=""></td>
+                <td>Sol Teak Chair</td>
+                <td>$70</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><img src="./IMG/chair2.jpg" alt=""></td>
+                <td>Ergonnomic Chair</td>
+                <td>$130</td>
+                <td><input type="number"></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <br>
     </div>
-    <!-- form -->
-    <div>
-
+     <!-- form -->
+    <div class="cartForm">
+        <div class="cartFormLeft">
+            <form action="">
+                <input type="button" value="UPDATE CART" id="updateCart">
+                <input type="button" value="CONTINUE SHOPPING" id="continueShopping">
+                <p id="text1">COUPON</p>
+                <P id="text2">Enter your coupon code if you have one</P>
+                <input type="text" name="Coupon code" id="couponText">
+                <input type="submit" value="APPLY COUPON" id="apply">
+            </form>
+        </div>
+        <div class="cartFormRight">
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="2">
+                            <b><u>CART TOTALS</u></b>
+                        </td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>SHIPPING</td>
+                    <td>
+                        <form action="">
+                            <input type="radio" name="SHIPPING" id="">Flat Rate:$7.00 <br>
+                            <input type="radio" name="SHIPPING" id="">Free Shipping
+                        </form>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>$200</td>
+                </tr>
+            </table>
+            <input type="button" value="Proceed to Checkout" id="proceed">
+        </div>
     </div>
 </body>
 </html>
